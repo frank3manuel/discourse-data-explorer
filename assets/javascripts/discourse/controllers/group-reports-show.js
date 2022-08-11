@@ -84,7 +84,7 @@ export default Ember.Controller.extend({
   @discourseComputed("queryGroup.bookmark")
   bookmarkClassName(bookmark) {
     return bookmark
-      ? ["bookmark", "bookmarked", "query-group-bookmark"].join(" ")
-      : ["bookmark", "query-group-bookmark"].join(" ");
+      ? ["bookmarked", "query-group-bookmark"].join(" ")
+      : ["query-group-bookmark"].join(" ");
   },
 });
